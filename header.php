@@ -15,7 +15,7 @@
                 <li class="menu-item"><a href="recipe.php">Recetas</a></li>
                 <li class="menu-item"><a href="contacto.php">Contacto</a></li>
                 <li class="menu-item"><a href="login.php">Login</a></li>
-                <li class="menu-item"><a href="ingresar_resetas.php">Subir recetas</a></li>
+                <li class="menu-item"><a href="ingresar_recetas.php">Subir recetas</a></li>
             </ul> <!-- .menu -->
         </div> <!-- .main-navigation -->
 
