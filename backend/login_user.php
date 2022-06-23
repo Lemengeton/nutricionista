@@ -20,10 +20,10 @@ if ($row != null)
 {
   session_start();
   $_SESSION['DNI_Usuario'] = $row[0];
-  header("Location:http://localhost/dietetica/index.php");
+  header("Location:../index.php");
 }else
 {
-   header("Location:http://localhost/dietetica/login.php");
+   header("Location:../login.php");
 }
 
 ?>
