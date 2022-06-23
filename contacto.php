@@ -25,7 +25,7 @@
 		
 		<div id="site-content">
 			<?php 
-			include'header.php';
+			include ('header.php')
 			?> <!-- .site-header -->
 
 			<main class="main-content">
