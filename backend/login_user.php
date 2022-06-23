@@ -8,7 +8,7 @@ $Password = $_POST['Password'];
 
 $sql = "SELECT DNI,nombre,apellido from usuario
         where DNI = '".$DNI_Usuario."' and 
-              contraseña = '".($Password)."' ";
+              contrasena = '".($Password)."' ";
 
 
 

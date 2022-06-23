@@ -482,7 +482,7 @@ p { margin-top: 0; }
 .site-header .main-navigation .menu-item.current-menu-item, .site-header .main-navigation .menu-item:hover { color: #f16a54; border-bottom: 2px solid #f16a54; }
 .site-header .main-navigation .menu-item.current-menu-item a, .site-header .main-navigation .menu-item:hover a { color: #f16a54; }
 
-#branding { padding: 20px 0; }
+#branding { padding: 1px;}
 .homepage #branding { display: none; }
 @media screen and (max-width: 990px) { .homepage #branding { display: block; } }
 #branding .logo { color: #f16a54; font-size: 32px; font-size: 2rem; vertical-align: middle; margin-right: 10px; }
