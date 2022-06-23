@@ -33,7 +33,7 @@ include ('backend/conexion.php');
 
 <main class="main-content">
 	<?php  
-	$sql ="SELECT `id`, `nombre`, `tiempo`, `descripción`, `imagen` FROM `recetas` WHERE 1";
+	$sql ="SELECT `id`, `nombre`, `tiempo`, `descripcion`, `imagen` FROM `recetas` WHERE 1";
 	$resp_sql = mysqli_query($conexion,$sql);
 	?>
 				
@@ -50,7 +50,7 @@ include ('backend/conexion.php');
 								<figure class="recipe-image"><img src="<?php echo $row['imagen'] ?>" alt="Food 1" class="receta_imagen"></figure>
 								<div class="recipe-detail">
 									<h2 class="recipe-title"><a href="single.php"><?php echo $row['nombre']; ?></a></h2>
-									<p><?php echo $row['descripción']; ?></p>
+									<p><?php echo $row['descripcion']; ?></p>
 									<div class="recipe-meta">
 										<span class="time"><img src="images/icon-time.png"> <?php echo $row['tiempo']; ?></span>
 									</div>
