@@ -22,11 +22,11 @@ $tamano = $_FILES['imagen']['size'];
       $imagen = 'images/'.$_FILES['imagen']['name'];
       $sql = "INSERT INTO `recetas`(`nombre`, `tiempo`, `descripción`, `imagen`) VALUES ('".$nombre."','".$tiempo."','".$descripcion."','".$imagen."')";
       	mysqli_query($conexion,$sql);
-      	header('location:../ingresar_resetas.php');
+      	header('location:../ingresar_recetas.php');
     } 
     else 
     {
        //si no cumple con el formato
-       echo "No se puede subir una imagen con ese formato ";
+       echo "No se puede subir una imagen con ese formato";
     }
  ?>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 11-06-2022 a las 19:51:08
+-- Tiempo de generación: 23-06-2022 a las 05:33:57
 -- Versión del servidor: 10.4.22-MariaDB
 -- Versión de PHP: 8.1.2
 
@@ -20,6 +20,28 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `dietetica`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `recetas`
+--
+
+CREATE TABLE `recetas` (
+  `id` int(11) NOT NULL,
+  `nombre` varchar(20) NOT NULL,
+  `tiempo` varchar(20) NOT NULL,
+  `descripción` varchar(100) NOT NULL,
+  `imagen` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `recetas`
+--
+
+INSERT INTO `recetas` (`id`, `nombre`, `tiempo`, `descripción`, `imagen`) VALUES
+(1, '', '20-10min', 'una receta echa de caca', ''),
+(4, 'atawt', '123gaf', 'aftgagag', 'images/logo.png');
 
 -- --------------------------------------------------------
 
@@ -46,10 +68,26 @@ INSERT INTO `usuario` (`DNI`, `nombre`, `apellido`, `contraseña`) VALUES
 --
 
 --
+-- Indices de la tabla `recetas`
+--
+ALTER TABLE `recetas`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indices de la tabla `usuario`
 --
 ALTER TABLE `usuario`
   ADD PRIMARY KEY (`DNI`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `recetas`
+--
+ALTER TABLE `recetas`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
