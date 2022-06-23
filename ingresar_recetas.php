@@ -30,6 +30,7 @@
             <form method="POST" enctype="multipart/form-data" action="backend/subir_recetas.php">
             	<input type="text" name="receta" placeholder="Nombre receta" class="mb-2 input"> <br>
             	<input type="text" name="tiempo" placeholder="Tiempo" class="mb-2 input"> <br>
+            	<input type="text" name="calorias" placeholder="Calorias" class="mb-2 input"> <br>
             	<textarea name="descripcion" placeholder="descripcion de receta" class="mb-2"></textarea><br>
             	<input class="imginput mb-2" accept="image/*" type="file" name="imagen"><br>
             	<button class="button mx-auto">Subir</button>
