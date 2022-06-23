@@ -21,7 +21,7 @@ $tamano = $_FILES['imagen']['size'];
       // Muevo la imagen desde el directorio temporal a nuestra ruta indicada anteriormente
       move_uploaded_file($_FILES['imagen']['tmp_name'],$directorio.$nombre_img);
       $imagen = 'images/'.$_FILES['imagen']['name'];
-      $sql = "INSERT INTO `recetas`(`nombre`, `tiempo`, `descripción`, `imagen`, `calorias`) VALUES ('".$nombre."','".$tiempo."','".$descripcion."','".$imagen."','".$calorias."')";
+      $sql = "INSERT INTO `recetas`(`nombre`, `tiempo`, `descripcion`, `imagen`, `calorias`) VALUES ('".$nombre."','".$tiempo."','".$descripcion."','".$imagen."','".$calorias."')";
       	mysqli_query($conexion,$sql);
       	header('location:../ingresar_recetas.php');
     } 
