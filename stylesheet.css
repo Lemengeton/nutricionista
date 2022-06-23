@@ -13,4 +13,6 @@
 .recipe-section{color: #9d9879;}
 .recipe-section .button { background-color: #fbab18; -webkit-transition: .3s ease; transition: .3s ease; border-color: transparent; }
 .recipe-section .button:hover { background-color: #fcbd4a; }
-.recipe-section input {padding: 10px 20px; border-radius: 20px; display: inline-block; font-weight: 500; color: #727272; font-size: 14px; font-size: 0.875rem; border: 2px solid #c1bda1; max-width: 450px; background-color: #fff3b2; width: 100%;}
+.recipe-section .input {padding: 10px 20px; border-radius: 20px; display: inline-block; font-weight: 500; color: #727272; font-size: 14px; font-size: 0.875rem; border: 2px solid #c1bda1; max-width: 450px; background-color: #fff3b2; width: 100%;}
+.recipe-section textarea {padding: 10px 20px; border-radius: 20px; display: inline-block; font-weight: 500; color: #727272; font-size: 14px; font-size: 0.875rem; border: 2px solid #c1bda1; max-width: 450px; background-color: #fff3b2; width: 100%;}
+.recipe-section .imginput {padding: 10px 20px; border-radius: 20px; display: inline-block; font-weight: 500; color: #727272; font-size: 14px; font-size: 0.875rem; border: 2px solid #c1bda1; max-width: 450px; background-color: #fff3b2; width: 100%;}
