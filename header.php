@@ -1,6 +1,6 @@
 <header class="site-header">
     <div class="container">
-        <a href="index.php" id="branding" class="pull-left">
+    <a href="index.php" id="branding" class="pull-left">
             <img src="images/logo_rework.svg" class="logo"
             width="70"
             />
