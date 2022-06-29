@@ -16,6 +16,7 @@ include ('backend/conexion.php');
 		<!-- Loading main css file -->
 		<link rel="stylesheet" href="style.css">
 		
+		
 		<!--[if lt IE 9]>
 		<script src="js/ie-support/html5.js"></script>
 		<script src="js/ie-support/respond.js"></script>
@@ -50,7 +51,7 @@ include ('backend/conexion.php');
 								<article class="recipe">
 								<figure class="recipe-image"><img src="<?php echo $row['imagen'] ?>" alt="Food 1" class="receta_imagen"></figure>
 								<div class="recipe-detail">
-									<h2 class="recipe-title"><a href="single.php"><?php echo $row['nombre']; ?></a></h2>
+									<button class="btn"><h2 class="recipe-title"><?php echo $row['nombre']; ?></h2></button>
 									<p><?php echo $row['descripcion']; ?></p>
 									<div class="recipe-meta">
 										<span class="time"><img src="images/icon-time.png"> <?php echo $row['tiempo']; ?></span>
