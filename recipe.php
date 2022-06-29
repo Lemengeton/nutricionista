@@ -46,6 +46,7 @@ include ('backend/conexion.php');
 						<div class="Recetas-list">
 							<?php while ($row = mysqli_fetch_array($resp_sql)) {
 								?>
+								<form method="POST" action="single.php">
 								<article class="recipe">
 								<figure class="recipe-image"><img src="<?php echo $row['imagen'] ?>" alt="Food 1" class="receta_imagen"></figure>
 								<div class="recipe-detail">
@@ -57,6 +58,8 @@ include ('backend/conexion.php');
 									</div>
 								</div>
 							</article>
+							<input type="hidden" name="receta" value='<?php echo $row["id"]; ?>'>
+							</form>
 								<?php
 							} ?>
 							<article class="recipe">
