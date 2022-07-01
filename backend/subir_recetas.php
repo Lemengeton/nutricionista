@@ -6,7 +6,7 @@ $descripcion = $_POST['descripcion'];
 $calorias = $_POST['calorias'];
 $ingredientes = $_POST['ingrediente'];
 $cantidad = $_POST['cantidad'];
-$contador = sizeof($ingredientes) -1;
+$contador = sizeof($ingredientes);
 $cocinado = $_POST['cocinado'];
 // Recibo los datos de la imagen
 $nombre_img = $_FILES['imagen']['name'];
