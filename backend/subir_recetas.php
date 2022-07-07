@@ -4,6 +4,10 @@ $nombre = $_POST['receta'];
 $tiempo = $_POST['tiempo'];
 $descripcion = $_POST['descripcion'];
 $calorias = $_POST['calorias'];
+$ingredientes = $_POST['ingrediente'];
+$cantidad = $_POST['cantidad'];
+$contador = sizeof($ingredientes);
+$cocinado = $_POST['cocinado'];
 // Recibo los datos de la imagen
 $nombre_img = $_FILES['imagen']['name'];
 $tipo = $_FILES['imagen']['type'];
@@ -21,9 +25,21 @@ $tamano = $_FILES['imagen']['size'];
       // Muevo la imagen desde el directorio temporal a nuestra ruta indicada anteriormente
       move_uploaded_file($_FILES['imagen']['tmp_name'],$directorio.$nombre_img);
       $imagen = 'images/'.$_FILES['imagen']['name'];
-      $sql = "INSERT INTO `recetas`(`nombre`, `tiempo`, `descripcion`, `imagen`, `calorias`) VALUES ('".$nombre."','".$tiempo."','".$descripcion."','".$imagen."','".$calorias."')";
+      $sql = "INSERT INTO `recetas`(`nombre`, `tiempo`, `descripcion`, `imagen`, `calorias`, `m_cocinado`) VALUES ('".$nombre."','".$tiempo."','".$descripcion."','".$imagen."','".$calorias."','".$cocinado."')";
+
       	mysqli_query($conexion,$sql);
-      	header('location:../ingresar_recetas.php');
+
+      $sql1 ="SELECT `id` FROM `recetas` WHERE recetas.nombre = '".$nombre."'";
+
+      $resp_sql = mysqli_query($conexion,$sql1);
+
+      $ID = mysqli_fetch_row($resp_sql);
+
+      for ($i=0; $i < $contador; $i++) { 
+      $sql2 ="INSERT INTO `ingredientes`(`ID_receta`, `cantidad`, `ingrediente`) VALUES ('".$ID[0]."','".$cantidad[$i]."','".$ingredientes[$i]."')";
+         mysqli_query($conexion,$sql2);
+   }
+         header('location:../ingresar_recetas.php');
     } 
     else 
     {
