@@ -28,7 +28,7 @@
 	<body class="homepage">
 		
 		<?php
-		include 'header_index.html';
+		include 'header_index.php';
 		?> <!-- .site-header -->
 
 			<div class="hero">
