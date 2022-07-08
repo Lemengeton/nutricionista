@@ -16,13 +16,21 @@
 		
 </head>
 <body class="homepage">
+<<<<<<< HEAD
 	<?php include ('header.php');  
+=======
+	<?php include ('header.php');
+>>>>>>> ocultar-accesos
 	if(isset($_SESSION['DNI_Usuario']))
 	{	
 	}else{
 		header("Location:index.php");
 	}
+<<<<<<< HEAD
 	?>
+=======
+	 ?>
+>>>>>>> ocultar-accesos
 	<div class="hero">
 		<div class="container recipe-section">
 			<img src="./images/logo_rework.svg" class="icon-logo" width="150"/>
