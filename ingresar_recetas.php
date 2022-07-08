@@ -1,11 +1,3 @@
-<?php 
-	session_start();
-	if(isset($_SESSION['DNI_Usuario']))
-	{	
-	}else{
-		header("Location:index.php");
-	}
-	?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,7 +16,13 @@
 		
 </head>
 <body class="homepage">
-	<?php include ('header.php') ?>
+	<?php include ('header.php');
+	if(isset($_SESSION['DNI_Usuario']))
+	{	
+	}else{
+		header("Location:index.php");
+	}
+	 ?>
 	<div class="hero">
 		<div class="container recipe-section">
 			<img src="./images/logo_rework.svg" class="icon-logo" width="150"/>

@@ -1,9 +1,3 @@
-<?php 
-	if(isset($_SESSION['DNI_Usuario']))
-	{
-		header("Location:./index.php");
-	}else
-	?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,6 +12,10 @@
 <body class="homepage">
 	<?php
 		include ('header.php');
+		if(isset($_SESSION['DNI_Usuario']))
+	{
+		header("Location:./index.php");
+	}else
 	?>
 	<div class="hero">
 		<div class="container login-section">
