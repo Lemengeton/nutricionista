@@ -15,6 +15,7 @@
 		<!-- Loading main css file -->
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="stylesheet.css">
+		<title>Nutricionista | Login</title>
 </head>
 <body class="homepage">
 	<?php
