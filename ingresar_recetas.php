@@ -22,7 +22,19 @@
 		
 </head>
 <body class="homepage">
+<<<<<<< HEAD
 	<?php include ('header.php') ?>
+=======
+	<?php include ('header.php');
+	include ('backend/conexion.php');
+	if(isset($_SESSION['DNI_Usuario']))
+	{	
+	}else{
+		header("Location:index.php");
+	}
+	 ?>
+
+>>>>>>> ocultar-accesos
 	<div class="hero">
 		<div class="container recipe-section">
 			<img src="./images/logo_rework.svg" class="icon-logo" width="150"/>
@@ -33,6 +45,11 @@
             	<input type="text" name="calorias" placeholder="Calorias" class="mb-2 input"> <br>
             	<textarea name="descripcion" placeholder="descripcion de receta" class="mb-2"></textarea><br>
             	<input class="imginput mb-2" accept="image/*" type="file" name="imagen"><br>
+<<<<<<< HEAD
+=======
+            	<input id="myInput" class="mb-2 input" type="number" placeholder="Cantidad de ingredientes">
+            	<div class="row" id="content"></div>
+>>>>>>> ocultar-accesos
             	<button class="button mx-auto">Subir</button>
             </form>
         </div>
@@ -40,5 +57,29 @@
     <?php
 	include 'footer.html';
 	?>
+<<<<<<< HEAD
+=======
+	<script type="text/javascript">
+		$(function(){
+  $("#myInput").change(function(){
+  var cantidad = $("#myInput").val();
+    RenderInputs(cantidad);
+  });
+
+});
+
+function RenderInputs(cantidad){
+$('#content').html('');
+  for (var i = 0; i < cantidad; i++) {
+  $('#content').append('<div class="homepage">');  
+        $('#content').append('<label> ingrediente ' + (i+1) + '</label>');
+        $('#content').append('<input class="mb-2 input container recipe-section" type="text" name="cantidad[]" placeholder="cantidad"/> ');
+        $('#content').append('<input class="mb-2 input container recipe-section" type="text" name="ingrediente[]" placeholder="ingrediente"/> ');
+        $('#content').append('</div>');
+  }
+
+}
+	</script>
+>>>>>>> ocultar-accesos
 </body>
 </html>
