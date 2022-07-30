@@ -17,12 +17,14 @@
 </head>
 <body class="homepage">
 	<?php include ('header.php');
+	include ('backend/conexion.php');
 	if(isset($_SESSION['DNI_Usuario']))
 	{	
 	}else{
 		header("Location:index.php");
 	}
 	 ?>
+
 	<div class="hero">
 		<div class="container recipe-section">
 			<img src="./images/logo_rework.svg" class="icon-logo" width="150"/>
@@ -34,7 +36,7 @@
             	<textarea name="descripcion" placeholder="descripcion de receta" class="mb-2"></textarea><br>
             	<textarea name="cocinado" placeholder="metodo de cocinado" class="mb-2"></textarea><br>
             	<input class="imginput mb-2" accept="image/*" type="file" name="imagen"><br>
-            	<input id="myInput" class="mb-2 input" type="number" placeholder="Cantidad de ingredientes"><br>
+            	<input id="myInput" class="mb-2 input" type="number" placeholder="Cantidad de ingredientes">
             	<div class="row" id="content"></div>
             	<button class="button mx-auto">Subir</button>
             </form>
@@ -45,16 +47,8 @@
 	?>
 	<script type="text/javascript">
 		$(function(){
-
-  $("#mySelect").change(function(){
-  var cantidad =$("#mySelect").val();
-    $("#myInput").val(cantidad);
-    RenderInputs(cantidad);
-  });
-  
   $("#myInput").change(function(){
   var cantidad = $("#myInput").val();
-    $("#mySelect").val(cantidad);
     RenderInputs(cantidad);
   });
 
