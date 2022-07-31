@@ -8,14 +8,18 @@
 		<!-- Loading main css file -->
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="stylesheet.css">
+		<title>Nutricionista | Login</title>
 </head>
 <body class="homepage">
 	<?php
 		include ('header.php');
+		session_start();
 		if(isset($_SESSION['DNI_Usuario']))
-	{
-		header("Location:./index.php");
-	}else
+		{
+			header("Location:index.php");
+		}else{
+
+		}
 	?>
 	<div class="hero">
 		<div class="container login-section">

@@ -16,22 +16,16 @@
                 <li class="menu-item"><a href="contacto.php">Contacto</a></li>
                 <?php 
                 session_start();
-                if(isset($_SESSION['DNI_Usuario'])){
-                    ?>
-                    <li class="menu-item"><a href="ingresar_recetas.php">Subir recetas</a></li>
-                    <li class="menu-item"><a href="backend/cerrar_sesion.php">cerrar sesion</a></li>
-                    <?php
+                if(isset($_SESSION['DNI_Usuario']))
+                {
+                    echo '<li class="menu-item"><a href="ingresar_recetas.php">Subir recetas</a></li>
+                    <li class="menu-item"><a href="backend/cerrar_sesion.php">cerrar sesion</a></li>'; 
+                }else{
+                    echo '<li class="menu-item"><a href="login.php">Login</a></li>';
                 }
-                else{
-                    ?>
-                    <li class="menu-item"><a href="login.php">Login</a></li>
-                    <?php
-                }
-                ?>
-                
+                 ?>
             </ul> <!-- .menu -->
         </div> <!-- .main-navigation -->
-
         <div class="mobile-navigation"></div>
     </div>
 </header> <!-- .site-header -->

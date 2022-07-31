@@ -8,14 +8,13 @@ include ('backend/conexion.php');
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
 		
-		<title>Diatecian | Recetas</title>
+		<title>Nutricionista | Recetas</title>
 		<!-- Loading third party fonts -->
 		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|" rel="stylesheet" type="text/css">
 		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
 		<link href="fonts/iconmoon.css" rel="stylesheet" type="text/css">
 		<!-- Loading main css file -->
 		<link rel="stylesheet" href="style.css">
-		
 		
 		<!--[if lt IE 9]>
 		<script src="js/ie-support/html5.js"></script>
@@ -47,11 +46,10 @@ include ('backend/conexion.php');
 						<div class="Recetas-list">
 							<?php while ($row = mysqli_fetch_array($resp_sql)) {
 								?>
-								<form method="POST" action="single.php">
 								<article class="recipe">
 								<figure class="recipe-image"><img src="<?php echo $row['imagen'] ?>" alt="Food 1" class="receta_imagen"></figure>
 								<div class="recipe-detail">
-									<button class="btn"><h2 class="recipe-title"><?php echo $row['nombre']; ?></h2></button>
+									<h2 class="recipe-title"><a href="single.php"><?php echo $row['nombre']; ?></a></h2>
 									<p><?php echo $row['descripcion']; ?></p>
 									<div class="recipe-meta">
 										<span class="time"><img src="images/icon-time.png"> <?php echo $row['tiempo']; ?></span>
@@ -59,8 +57,6 @@ include ('backend/conexion.php');
 									</div>
 								</div>
 							</article>
-							<input type="hidden" name="receta" value='<?php echo $row["id"]; ?>'>
-							</form>
 								<?php
 							} ?>
 							<article class="recipe">
