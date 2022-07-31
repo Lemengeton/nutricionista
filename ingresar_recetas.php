@@ -44,13 +44,6 @@
 	?>
 	<script type="text/javascript">
 		$(function(){
-
-  $("#mySelect").change(function(){
-  var cantidad =$("#mySelect").val();
-    $("#myInput").val(cantidad);
-    RenderInputs(cantidad);
-  });
-  
   $("#myInput").change(function(){
   var cantidad = $("#myInput").val();
     $("#mySelect").val(cantidad);
