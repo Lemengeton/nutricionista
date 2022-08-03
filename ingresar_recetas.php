@@ -15,34 +15,36 @@
 		<link rel="stylesheet" href="stylesheet.css">
 		
 </head>
-<body class="homepage">
+<body>
 	<?php include ('header.php');
-	if(isset($_SESSION['DNI_Usuario']))
-	{	
-	}else{
-		header("Location:index.php");
-	} ?>
-	<div class="hero">
-		<div class="container recipe-section">
-			<img src="./images/logo_rework.svg" class="icon-logo" width="150"/>
-            <h1 class="site-title">ingresar recetas</h1>
-            <form method="POST" enctype="multipart/form-data" action="backend/subir_recetas.php">
-            	<input type="text" name="receta" placeholder="Nombre receta" class="mb-2 input"> <br>
-            	<input type="text" name="tiempo" placeholder="Tiempo" class="mb-2 input"> <br>
-            	<input type="text" name="calorias" placeholder="Calorias" class="mb-2 input"> <br>
-            	<textarea name="descripcion" placeholder="descripcion de receta" class="mb-2"></textarea><br>
-            	<textarea name="cocinado" placeholder="metodo de cocinado" class="mb-2"></textarea><br>
-            	<input class="imginput mb-2" accept="image/*" type="file" name="imagen"><br>
-            	<input id="myInput" class="mb-2 input" type="number" placeholder="Cantidad de ingredientes"><br>
-            	<div class="row" id="content"></div>
-            	<button class="button mx-auto">Subir</button>
-            </form>
-        </div>
-    </div>
-    <?php
-	include 'footer.html';
-	?>
-	<script type="text/javascript">
+		if(isset($_SESSION['DNI_Usuario']))
+		{	
+		}else{
+			header("Location:index.php");
+		}; ?>
+		<div class="hero">
+			<div class="container recipe-section">
+				<img src="./images/logo_rework.svg" class="icon-logo" width="150"/>
+            	<h1 class="site-title">Subir Receta</h1>
+           		<form method="POST" enctype="multipart/form-data" action="backend/subir_recetas.php">
+            		<input type="text" name="receta" placeholder="Nombre receta" class="mb-2 input"> <br>
+            		<input type="text" name="tiempo" placeholder="Tiempo" class="mb-2 input"> <br>
+            		<input type="text" name="calorias" placeholder="Calorias" class="mb-2 input"> <br>
+            		<textarea name="descripcion" placeholder="descripcion de receta" class="mb-2"></textarea><br>
+            		<textarea name="cocinado" placeholder="metodo de cocinado" class="mb-2"></textarea><br>
+            		<input class="imginput mb-2" accept="image/*" type="file" name="imagen"><br>
+            		<input id="myInput" class="mb-2 input" type="number" placeholder="Cantidad de ingredientes"><br>
+            		<div class="row" id="content"></div>
+            		<button class="button mx-auto">Subir</button>
+           		</form>
+        	</div>
+   		</div>
+    	<?php
+		include 'footer.html';
+		?>
+</body>
+</html>
+<script type="text/javascript">
 		$(function(){
   $("#myInput").change(function(){
   var cantidad = $("#myInput").val();
@@ -64,5 +66,3 @@ $('#content').html('');
 
 }
 	</script>
-</body>
-</html>

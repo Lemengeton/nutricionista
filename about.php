@@ -48,20 +48,6 @@
 								<h2>Hola, <br>Yo soy Griselda</h2>
 								<p>Estoy casada y tengo una hija. Vivo en la Ciudad Autónoma de Buenos Aires, Argentina. Siempre me gustó la nutrición y el mundo de la salud y alimentos, pero me decidí por estudiar la carrera de adulta, pasados los 30 años. Alentada por mi esposo me dispuse a buscar universidades. Hice la carrera en universidad Isalud. Al principio creía que ser nutricionista era estar en un consultorio y prescribir dietas, pero en la carrera descubrí que nuestra profesión se extiende mucho más allá de un escritorio. Los nutricionistas podemos realizar nuestra labor en fábricas de alimentos, restaurantes, escuelas, hospitales, clínicas, consultorios privados, a domicilio, etc. No sólo entregando un plan de alimentación sino hacer seguimiento y acompañar al paciente, conocerlo y alentarlo a conseguir sus objetivos nutricionales. Te invito a seguirme para recorrer juntos el camino al éxito nutricional y saludable adaptado a tus gustos y posibilidades.<br><br></p>
 								
-
-								<p>¿QUÉ TE OFREZCO?<br>
-								Consulta personalizada<br>
-								Se llevará a cabo una evaluación inicial para conocer tus objetivos y así ofrecerte las herramientas que necesitas.</p>
-
-								<p>Plan de Alimentación individualizado<br>
-								Prescripción calórica y preparación de plan diseñado exclusivamente pensando en tus necesidades, gustos y metas.</p>
-
-								<p>Menús variados<br>
-								Tips para mejorar la calidad de tus comidas. Diseño de menú que vaya de acuerdo a tus preferencias, intolerancias y estilo de vida.</p>
-
-								<p>Progreso<br>
-								Estaré atenta dando seguimiento a tus resultados, ofreciéndote nuevas recomendaciones y respondiendo tus preguntas.</p>
-
 								<p>PREGUNTAS FRECUENTES:<br>
 								Trabaja con vegetarianos/veganos?<br>
 								Claro que sí. Apoyo esta dieta y juntos podemos diseñar un plan de alimentación basado en una dieta vegetariana, equilibrada, variada y saludable.<br><br>
