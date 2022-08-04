@@ -1,12 +1,21 @@
+<?php 
+include ("backend/conexion.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
+	<?php  
+	$id = $_POST['receta'];
+	$sql ="SELECT `nombre`, `tiempo`, `descripcion`, `imagen`, `calorias`, `m_cocinado` FROM `recetas` WHERE recetas.id = '".$id."'";
+	$sql1 ="SELECT `cantidad`, `ingrediente` FROM `ingredientes` WHERE ingredientes.ID_receta = '".$id."'";
+	$resp_sql = mysqli_query($conexion,$sql);
+	$resp_sql1 = mysqli_query($conexion,$sql1);
+	?>
 	<head>
 		<link rel="shortcut icon" type="image/x-icon" href="images/logo_pagina.ico" />
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
 		
-		<title>Nutricionista | Receta Detallada</title>
+		<title>Diatecian | Recipe Single</title>
 		<!-- Loading third party fonts -->
 		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|" rel="stylesheet" type="text/css">
 		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -21,13 +30,12 @@
 
 	</head>
 
-
 	<body>
 		
 		<?php
 		include 'header.php'; 
 		?> <!-- .site-header -->
-
+		<?php while ($row = mysqli_fetch_array($resp_sql)) {?>
 			<main class="main-content">
 				
 				<div class="content">
@@ -35,46 +43,28 @@
 						
 						<div class="row">
 							<div class="col-md-4">
-								<figure><img src="images/carrot_cake.png" style="max-height: 550px; max-width: 450px;"></figure>
+								<figure><img src="<?php echo $row['imagen']; ?>" style="max-height: 550px; max-width: 450px;"></figure>
 							</div>
 							<div class="col-md-7 col-md-offset-1">
-								<h2 class="entry-title">Tarta de zanahoria</h2>
+								<h2 class="entry-title"><?php echo $row['nombre']; ?></h2>
 								<div class="recipe-meta">
-									<span class="time"><img src="images/icon-time.png"> 25-30 min</span>
+									<span class="time"><img src="images/icon-time.png"><?php echo $row['tiempo']; ?></span>
 								</div>
 								<div class="ingredient">
 									<h3>Ingredientes</h3>
+									<?php while ($row1 = mysqli_fetch_array($resp_sql1)){ ?>
 									<table>
 										<tr>
-											<td><strong>2 1/2 tazas</strong></td> 
-											<td>Zanahoria rallada</td>
+											<td><strong><?php echo $row1['cantidad']; ?></strong></td> 
+											<td><?php echo $row1['ingrediente'] ?></td>
 										</tr>
-										<tr>
-											<td><strong>1 taza</strong></td> 
-											<td>Harina Leudante</td>
-										</tr>
-										<tr>
-											<td><strong>1 taza</strong></td> 
-											<td>Duis aute irure </td>
-										</tr>
-										<tr>
-											<td><strong>1/2 tazas</strong></td> 
-											<td>Aceite</td>
-										</tr>
-										<tr>
-											<td><strong>2</strong></td> 
-											<td>huevos</td>
-										</tr>
-										<tr>
-											<td><strong></strong></td> 
-											<td>Esencia de vainilla</td>
-										</tr>
-									</table>	
+									</table>
+									<?php  }?>	
 								</section>
 							</div>
 							<p>
-								Mezclar todos los ingredientes, poner en budinera enmantecada y enharinada y llevar a horno moderado 25-35 min. Otra opción es microondas por 9 minutos.
-								Opción sin tacc: reemplazá la harina por premezcla y 1 cdta de polvo de hornear. Fijate bien que todos los ingredientes sean aptos y a disfrutar. Se puede decorar a gusto y así solito queda también muy delicioso!!
+								<?php 
+								echo $row['m_cocinado']; ?>
 							</p>
 						</div>
 						
@@ -82,6 +72,7 @@
 				</div>
 
 			</main> <!-- .main-content -->
+		<?php } ?>
 			
 			<?php
 				include 'footer.html';
