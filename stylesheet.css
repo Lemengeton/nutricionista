@@ -16,3 +16,16 @@
 .recipe-section .input {padding: 10px 20px; border-radius: 20px; display: inline-block; font-weight: 500; color: #727272; font-size: 14px; font-size: 0.875rem; border: 2px solid #c1bda1; max-width: 450px; background-color: #fff3b2; width: 100%;}
 .recipe-section textarea {padding: 10px 20px; border-radius: 20px; display: inline-block; font-weight: 500; color: #727272; font-size: 14px; font-size: 0.875rem; border: 2px solid #c1bda1; max-width: 450px; background-color: #fff3b2; width: 100%;}
 .recipe-section .imginput {padding: 10px 20px; border-radius: 20px; display: inline-block; font-weight: 500; color: #727272; font-size: 14px; font-size: 0.875rem; border: 2px solid #c1bda1; max-width: 450px; background-color: #fff3b2; width: 100%;}
+
+.rinput {padding: 10px 20px; border-radius: 20px; display: inline-block; font-weight: 500; color: #727272; font-size: 14px; font-size: 0.875rem; border: 2px solid #c1bda1; max-width: 450px; background-color: #fff3b2; width: 100%;}
+
+.del-recipe-section .button { background-color: #d4231d; -webkit-transition: .3s ease; transition: .3s ease; border-color: transparent; }
+.del-recipe-section .button:hover { background-color: #79120e; }
+
+.trans{background-color: transparent; border-color: transparent; color: #ff6a54; height: 10px; width: auto; margin-bottom: 70px;}
+
+.site-header .main-navigation .menu-item-c { display: inline-block; padding: 30px 0; margin: 0; }
+.site-header .main-navigation .menu-item-c a { display: inline-block; padding: 0 20px; line-height: 1; color: #f2463a; font-weight: 400; font-size: 14px; font-size: 0.875rem; border-bottom: 2px solid transparent; -webkit-transition: .3s ease; transition: .3s ease; border-right: 1px solid #9d9879; }
+.site-header .main-navigation .menu-item-c:last-child a { border-right: none; }
+.site-header .main-navigation .menu-item-c.current-menu-item, .site-header .main-navigation .menu-item-c:hover { color: #ad2d19; border-bottom: 2px solid #ad2d19; }
+.site-header .main-navigation .menu-item-c.current-menu-item a, .site-header .main-navigation .menu-item-c:hover a { color: #ad2d19; }
