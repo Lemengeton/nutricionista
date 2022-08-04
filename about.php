@@ -41,7 +41,7 @@
 								<ul class="person-detail">
 									<li><span class="icon"><img src="images/icon-baby.png"></span>Nacimiento: <strong>07.04.1988</strong></li>
 									<li><span class="icon"><img src="images/icon-map-marker.png"></span>Ciudad: <strong>Buenos Aires</strong></li>
-									<li><span class="icon"><img src="images/icon-heart.png"></span>Favoritos: <strong>Lorem ipsum, Dolor sit</strong></li>
+									<!--<li><span class="icon"><img src="images/icon-heart.png"></span>Favoritos: <strong>Lorem ipsum, Dolor sit</strong></li>-->
 									<li><span class="icon"><img src="images/icon-clock.png"></span>Experiencia: <strong>1 año</strong></li>
 								</ul>
 							</div>

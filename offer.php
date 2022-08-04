@@ -35,7 +35,6 @@
 					<div class="container">
 						
 						<h2 class="entry-title">¿QUÉ TE OFREZCO?</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 
 						<hr>
 
@@ -72,7 +71,31 @@
 
 						<hr>
 
-						<p>Pellentesque erat erat, mattis non feugiat pharetra, viverra nec mauris. Nullam sed risus aliquam, congue nunc ac, convallis mi. <a href="#">Cras pellentesque sit amet urna fermentum ornare</a>. Sed in metus justo. Cras sit amet odio eu enim condimentum pretium vitae nec enim. In aliquet dolor nisl. Proin semper turpis nec posuere consectetur. Vivamus tristique rutrum quam, eu mattis elit semper eget. Sed ultrices, tellus dapibus consectetur porttitor, dui sapien mattis odio, vel imperdiet ipsum risus at risus. Mauris auctor tortor id sollicitudin tincidunt. Integer magna leo, sagittis a congue nec, viverra non mi. Proin dapibus pharetra tristique. Aliquam id lorem metus. Vivamus elit turpis, venenatis eu luctus quis, suscipit eget urna.</p>
+						<p><h2>PREGUNTAS FRECUENTES:</h2><br>
+								<h3>¿Trabaja con vegetarianos/veganos?</h3><br>
+								Claro que sí. Apoyo esta dieta y juntos podemos diseñar un plan de alimentación basado en una dieta vegetariana, equilibrada, variada y saludable.<br><br>
+
+								<h3>¿Cuánto tiempo toma ver resultados en la pérdida de peso?</h3><br>
+								El ritmo de adelgazamiento lo estableces tú, con tu disciplina y compromiso. En promedio, la pérdida de peso corporal saludable es aproximadamente 0.75-1 kg a la semana. Al comienzo se experimenta una pérdida más rápida, a consecuencia de los almacenes de agua que se encuentran en el glucógeno (almacenes de azúcar). Por lo mismo, las primeras 3 semanas puedes estar duplicando la pérdida esperada. Luego de este periodo, estarás perdiendo principalmente tejido adiposo (almacenes de grasa). Por otra parte, pierde más peso el que más peso debe perder. A medida que estamos en un peso más saludable, requiere más esfuerzo y tiempo perder peso.<br><br>
+
+								<h3>¿Hay que dejar de comer hidratos de carbono como el arroz y el pan?</h3><br>
+								No. Pero por supuesto, las cantidades de las harinas serán moderadas y de manera absoluta se recomienda incluirlas, pero las de tipo integral.<br><br>
+								
+								<h3>¿Para realizar la consulta hay que estar en sobrepeso?</h3><br>
+								No. Todos, independientemente del peso corporal, debemos nutrir nuestro cuerpo de forma saludable. Una buena alimentación es clave para prevenir y/o acompañar muchas enfermedades crónicas de salud.<br><br>
+								
+								<h3>¿Puede ser la misma dieta para mi espos@ e hij@s?</h3><br>
+								La prescripción calórica del plan es individualizada y puede no cumplir con los gustos o requerimientos calóricos de otros en la familia. Por lo que se recomienda hablar con cada integrante para así adaptar el plan a cada miembro de la familia.<br><br>
+
+								<h3>¿Cuánto tiempo dura el tratamiento?</h3><br>
+								Todo depende de tu estado de salud al comienzo y las metas establecidas. El propósito detrás de todo plan es implementar cambios permanentes en tus hábitos alimentarios.<br><br>
+
+
+								<h3>¿Para llevar el plan de alimentación hay que comprar alimentos especiales más costosos?</h3><br>
+								En términos generales, comer de manera inteligente y saludable no debe impactar negativamente tu bolsillo. Reconozco que las carnes magras, los vegetales y productos orgánicos son más costosos, por lo mismo se recomienda productos locales y de estación. Por otra parte, estaremos eliminando el consumo de muchos alimentos ultraprocesados que son costosos, tales como: barras granola, cereales, y variedad de productos “light”.<br><br>
+
+								<h3>¿Se puede mantener una vida social activa, salir a comer fuera y consumir bebidas alcohólicas durante el proceso?</h3><br>
+								Sí, por supuesto se diseñará un plan con recomendaciones que se adapten a tu estilo de vida.</p>
 					</div>
 				</div>
 
