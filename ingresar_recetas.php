@@ -52,14 +52,13 @@
 					$sql ="SELECT `id`, `nombre` FROM `recetas` WHERE 1";
 					$resp_sql = mysqli_query($conexion,$sql);
 					?>
-					<select name="receta">
+					<select name="receta" class="mb-2 input">>
 						<option>seleccionar receta</option>
 						<?php while ($row = mysqli_fetch_array($resp_sql)) {
 						 ?>
 						<option value="<?php echo $row['id'] ?>"><?php echo $row['nombre']; ?></option>
 					<?php } ?>
-					</select>
-					<br>
+					</select><br><br>
 					<button class="btn btn-danger">Eliminar</button>
 				</form>
 			</div>
