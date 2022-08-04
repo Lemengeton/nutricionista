@@ -39,7 +39,10 @@ $tamano = $_FILES['imagen']['size'];
       $sql2 ="INSERT INTO `ingredientes`(`ID_receta`, `cantidad`, `ingrediente`) VALUES ('".$ID[0]."','".$cantidad[$i]."','".$ingredientes[$i]."')";
          mysqli_query($conexion,$sql2);
    }
-         header('location:../ingresar_recetas.php');
+   echo'<script type="text/javascript">
+    alert("Receta Guardada");
+    window.location.href="../ingresar_recetas.php";
+    </script>';
     } 
     else 
     {
