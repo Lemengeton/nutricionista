@@ -29,7 +29,7 @@
                 if(isset($_SESSION['DNI_Usuario']))
                 {
                     echo '<li class="menu-item"><a href="ingresar_recetas.php">Subir recetas</a></li>
-                <li class="menu-item"><a href="backend/cerrar_sesion.php">cerrar sesion</a></li>';
+                <li class="menu-item-c"><a href="backend/cerrar_sesion.php">cerrar sesion</a></li>';
                 }else{
                     echo '<li class="menu-item"><a href="login.php">Login</a></li>';
                 } ?>

@@ -19,8 +19,8 @@
                 session_start();
                 if(isset($_SESSION['DNI_Usuario']))
                 {
-                    echo '<li class="menu-item"><a href="ingresar_recetas.php">Subir Receta</a></li>
-                <li class="menu-item"><a href="backend/cerrar_sesion.php">Cerrar Sesion</a></li>';
+                    echo '<li class="menu-item"><a href="ingresar_recetas.php">Subir/Eliminar Receta</a></li>
+                <li class="menu-item-c"><a href="backend/cerrar_sesion.php">Cerrar Sesion</a></li>';
                 }else{
                     echo '<li class="menu-item"><a href="login.php">Login</a></li>';
                 } ?>

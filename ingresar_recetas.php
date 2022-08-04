@@ -35,31 +35,34 @@
 				<img src="./images/logo_rework.svg" class="icon-logo" width="150"/>
 				<h1 class="site-title">Subir Receta</h1>
 				<form method="POST" enctype="multipart/form-data" action="backend/subir_recetas.php">
-					<input type="text" name="receta" placeholder="Nombre receta" class="mb-2 input" required> <br>
+					<input type="text" name="receta" placeholder="Nombre Receta" class="mb-2 input" required> <br>
 					<input type="text" name="tiempo" placeholder="Tiempo" class="mb-2 input" required> <br>
 					<input type="text" name="calorias" placeholder="Calorias" class="mb-2 input" required> <br>
-					<textarea name="descripcion" placeholder="descripcion de receta" class="mb-2" required></textarea><br>
-					<textarea name="cocinado" placeholder="metodo de cocinado" class="mb-2" required></textarea><br>
+					<textarea name="descripcion" placeholder="Descripcion de Receta" class="mb-2" required></textarea><br>
+					<textarea name="cocinado" placeholder="Pasos a Seguir" class="mb-2" required></textarea><br>
 					<input class="imginput mb-2" accept="image/*" type="file" name="imagen" required><br>
 					<input id="myInput" class="mb-2 input" type="number" placeholder="Cantidad de ingredientes" required><br>
 					<div class="row" id="content"></div>
-					<button class="button mx-auto" id="formulario_subir">Subir</button>
+					<button class="button mx-auto">Subir</button>
 				</form>
-				<h1 class="site-title">Eliminar recetas</h1>
+				<h1 class="site-title">Eliminar receta</h1>
+			</div>
+			<div class="container del-recipe-section">
 				<form method="POST" enctype="multipart/form-data" action="backend/eleminar_recetas.php">
 					<?php  
 					include ("backend/conexion.php");
 					$sql ="SELECT `id`, `nombre` FROM `recetas` WHERE 1";
 					$resp_sql = mysqli_query($conexion,$sql);
 					?>
-					<select name="receta" class="mb-2 input" required>>
-						<option selected disabled>seleccionar receta</option>
+					<select class="rinput mb-2" name="receta">
+						<option disable required>Seleccionar Receta</option>
 						<?php while ($row = mysqli_fetch_array($resp_sql)) {
 						 ?>
 						<option value="<?php echo $row['id'] ?>"><?php echo $row['nombre']; ?></option>
 					<?php } ?>
-					</select><br><br>
-					<button class="btn btn-danger" id="formulario_baja">Eliminar</button>
+					</select>
+					<br>
+					<button class="button">Eliminar</button>
 				</form>
 			</div>
 		</div>
