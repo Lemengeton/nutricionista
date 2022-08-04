@@ -32,13 +32,13 @@
 					<input type="text" name="tiempo" placeholder="Tiempo" class="mb-2 input"> <br>
 					<input type="text" name="calorias" placeholder="Calorias" class="mb-2 input"> <br>
 					<textarea name="descripcion" placeholder="Descripcion de Receta" class="mb-2"></textarea><br>
-					<textarea name="cocinado" placeholder="metodo de cocinado" class="mb-2"></textarea><br>
+					<textarea name="cocinado" placeholder="Metodo de Cocinado" class="mb-2"></textarea><br>
 					<input class="imginput mb-2" accept="image/*" type="file" name="imagen"><br>
 					<input id="myInput" class="mb-2 input" type="number" placeholder="Cantidad de ingredientes"><br>
 					<div class="row" id="content"></div>
 					<button class="button mx-auto">Subir</button>
 				</form>
-				<h1 class="site-title">Eliminar recetas</h1>
+				<h1 class="site-title">Eliminar receta</h1>
 			</div>
 			<div class="container del-recipe-section">
 				<form method="POST" enctype="multipart/form-data" action="backend/eleminar_recetas.php">
