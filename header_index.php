@@ -1,4 +1,5 @@
 <header class="site-header">
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo_pagina.ico" />
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|" rel="stylesheet" type="text/css">
         <link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
         <link href="fonts/iconmoon.css" rel="stylesheet" type="text/css">

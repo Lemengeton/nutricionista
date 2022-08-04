@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="shortcut icon" type="image/x-icon" href="images/logo_pagina.ico" />
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Nutricionista | recetas</title>
@@ -25,21 +26,37 @@
 		<div class="hero">
 			<div class="container recipe-section">
 				<img src="./images/logo_rework.svg" class="icon-logo" width="150"/>
-            	<h1 class="site-title">Subir Receta</h1>
-           		<form method="POST" enctype="multipart/form-data" action="backend/subir_recetas.php">
-            		<input type="text" name="receta" placeholder="Nombre receta" class="mb-2 input"> <br>
-            		<input type="text" name="tiempo" placeholder="Tiempo" class="mb-2 input"> <br>
-            		<input type="text" name="calorias" placeholder="Calorias" class="mb-2 input"> <br>
-            		<textarea name="descripcion" placeholder="descripcion de receta" class="mb-2"></textarea><br>
-            		<textarea name="cocinado" placeholder="metodo de cocinado" class="mb-2"></textarea><br>
-            		<input class="imginput mb-2" accept="image/*" type="file" name="imagen"><br>
-            		<input id="myInput" class="mb-2 input" type="number" placeholder="Cantidad de ingredientes"><br>
-            		<div class="row" id="content"></div>
-            		<button class="button mx-auto">Subir</button>
-           		</form>
-        	</div>
-   		</div>
-    	<?php
+				<h1 class="site-title">Subir Receta</h1>
+				<form method="POST" enctype="multipart/form-data" action="backend/subir_recetas.php">
+					<input type="text" name="receta" placeholder="Nombre receta" class="mb-2 input"> <br>
+					<input type="text" name="tiempo" placeholder="Tiempo" class="mb-2 input"> <br>
+					<input type="text" name="calorias" placeholder="Calorias" class="mb-2 input"> <br>
+					<textarea name="descripcion" placeholder="descripcion de receta" class="mb-2"></textarea><br>
+					<textarea name="cocinado" placeholder="metodo de cocinado" class="mb-2"></textarea><br>
+					<input class="imginput mb-2" accept="image/*" type="file" name="imagen"><br>
+					<input id="myInput" class="mb-2 input" type="number" placeholder="Cantidad de ingredientes"><br>
+					<div class="row" id="content"></div>
+					<button class="button mx-auto">Subir</button>
+				</form>
+				<h1 class="site-title">Eliminar recetas</h1>
+				<form method="POST" enctype="multipart/form-data" action="backend/eleminar_recetas.php">
+					<?php  
+					include ("backend/conexion.php");
+					$sql ="SELECT `id`, `nombre` FROM `recetas` WHERE 1";
+					$resp_sql = mysqli_query($conexion,$sql);
+					?>
+					<select name="receta">
+						<?php while ($row = mysqli_fetch_array($resp_sql)) {
+						 ?>
+						<option value="<?php echo $row['id'] ?>"><?php echo $row['nombre']; ?></option>
+					<?php } ?>
+					</select>
+					<br>
+					<button class="btn btn-danger">Eliminar</button>
+				</form>
+			</div>
+		</div>
+		<?php
 		include 'footer.html';
 		?>
 </body>

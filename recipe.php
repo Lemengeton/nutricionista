@@ -2,6 +2,7 @@
 include ('backend/conexion.php');
  ?>
 <!DOCTYPE html>
+<link rel="shortcut icon" type="image/x-icon" href="images/logo_pagina.ico" />
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
@@ -20,16 +21,15 @@ include ('backend/conexion.php');
 		<script src="js/ie-support/html5.js"></script>
 		<script src="js/ie-support/respond.js"></script>
 		<![endif]-->
-
+<?php 
+			include './header.php';
+			?> <!-- .site-header -->
 	</head>
 
 
 	<body>
 		
 		<div id="site-content">
-			<?php 
-			include './header.php';
-			?> <!-- .site-header -->
 
 <main class="main-content">
 	<?php  
@@ -46,10 +46,11 @@ include ('backend/conexion.php');
 						<div class="Recetas-list">
 							<?php while ($row = mysqli_fetch_array($resp_sql)) {
 								?>
+								<form method="POST" action="single.php">
 								<article class="recipe">
 								<figure class="recipe-image"><img src="<?php echo $row['imagen'] ?>" alt="Food 1" class="receta_imagen"></figure>
 								<div class="recipe-detail">
-									<h2 class="recipe-title"><a href="single.php"><?php echo $row['nombre']; ?></a></h2>
+									<button><h2 class="recipe-title"><?php echo $row['nombre']; ?></h2></button>
 									<p><?php echo $row['descripcion']; ?></p>
 									<div class="recipe-meta">
 										<span class="time"><img src="images/icon-time.png"> <?php echo $row['tiempo']; ?></span>
@@ -57,6 +58,8 @@ include ('backend/conexion.php');
 									</div>
 								</div>
 							</article>
+							<input type="hidden" name="id" value="<?php echo $row['id']; ?>">
+							</form>
 								<?php
 							} ?>
 							<article class="recipe">

@@ -1,4 +1,5 @@
 <header class="site-header">
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo_pagina.ico" />
     <div class="container">
     <a href="index.php" id="branding" class="pull-left">
             <img src="images/logo_rework.svg" class="logo"
