@@ -52,14 +52,14 @@ include ("backend/conexion.php"); ?>
 								</div>
 								<div class="ingredient">
 									<h3>Ingredientes</h3>
-									<?php while ($row1 = mysqli_fetch_array($resp_sql1)){ ?>
 									<table>
+										<?php while ($row1 = mysqli_fetch_array($resp_sql1)){ ?>
 										<tr>
 											<td><strong><?php echo $row1['cantidad']; ?></strong></td> 
 											<td><?php echo $row1['ingrediente'] ?></td>
 										</tr>
+										<?php  }?>	
 									</table>
-									<?php  }?>	
 								</section>
 							</div>
 							<p>
