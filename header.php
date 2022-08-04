@@ -1,4 +1,5 @@
 <header class="site-header">
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo_pagina.ico" />
     <div class="container">
     <a href="index.php" id="branding" class="pull-left">
             <img src="images/logo_rework.svg" class="logo"
@@ -16,19 +17,13 @@
                 <li class="menu-item"><a href="contacto.php">Contacto</a></li>
                 <?php 
                 session_start();
-                if(isset($_SESSION['DNI_Usuario'])){
-                    ?>
-                    <li class="menu-item"><a href="ingresar_recetas.php">Subir recetas</a></li>
-                    <li class="menu-item"><a href="backend/cerrar_sesion.php">cerrar sesion</a></li>
-                    <?php
-                }
-                else{
-                    ?>
-                    <li class="menu-item"><a href="login.php">Login</a></li>
-                    <?php
-                }
-                ?>
-                
+                if(isset($_SESSION['DNI_Usuario']))
+                {
+                    echo '<li class="menu-item"><a href="ingresar_recetas.php">Subir/Eliminar Receta</a></li>
+                <li class="menu-item-c"><a href="backend/cerrar_sesion.php">Cerrar Sesion</a></li>';
+                }else{
+                    echo '<li class="menu-item"><a href="login.php">Login</a></li>';
+                } ?>
             </ul> <!-- .menu -->
         </div> <!-- .main-navigation -->
 

@@ -1,4 +1,5 @@
 <header class="site-header">
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo_pagina.ico" />
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|" rel="stylesheet" type="text/css">
         <link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
         <link href="fonts/iconmoon.css" rel="stylesheet" type="text/css">
@@ -25,18 +26,13 @@
                 <li class="menu-item"><a href="contacto.php">Contacto</a></li>
                 <?php 
                 session_start();
-                if(isset($_SESSION['DNI_Usuario'])){
-                    ?>
-                    <li class="menu-item"><a href="ingresar_recetas.php">Subir recetas</a></li>
-                    <li class="menu-item"><a href="backend/cerrar_sesion.php">cerrar sesion</a></li>
-                    <?php
-                }
-                else{
-                    ?>
-                    <li class="menu-item"><a href="login.php">Login</a></li>
-                    <?php
-                }
-                ?>
+                if(isset($_SESSION['DNI_Usuario']))
+                {
+                    echo '<li class="menu-item"><a href="ingresar_recetas.php">Subir recetas</a></li>
+                <li class="menu-item-c"><a href="backend/cerrar_sesion.php">cerrar sesion</a></li>';
+                }else{
+                    echo '<li class="menu-item"><a href="login.php">Login</a></li>';
+                } ?>
             </ul> <!-- .menu -->
         </div> <!-- .main-navigation -->
 

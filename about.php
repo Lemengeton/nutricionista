@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<link rel="shortcut icon" type="image/x-icon" href="images/logo_pagina.ico" />
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
 		
-		<title>Diatecian | Sobre mi</title>
+		<title>Nutricionista | Sobre mi</title>
 		<!-- Loading third party fonts -->
 		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|" rel="stylesheet" type="text/css">
 		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
 		<link href="fonts/iconmoon.css" rel="stylesheet" type="text/css">
 		<!-- Loading main css file -->
 		<link rel="stylesheet" href="style.css">
-		
+		<link rel="stylesheet" href="stylesheet.css">
+
 		<!--[if lt IE 9]>
 		<script src="js/ie-support/html5.js"></script>
 		<script src="js/ie-support/respond.js"></script>
@@ -40,7 +42,7 @@
 								<ul class="person-detail">
 									<li><span class="icon"><img src="images/icon-baby.png"></span>Nacimiento: <strong>07.04.1988</strong></li>
 									<li><span class="icon"><img src="images/icon-map-marker.png"></span>Ciudad: <strong>Buenos Aires</strong></li>
-									<li><span class="icon"><img src="images/icon-heart.png"></span>Favoritos: <strong>Lorem ipsum, Dolor sit</strong></li>
+									<!--<li><span class="icon"><img src="images/icon-heart.png"></span>Favoritos: <strong>Lorem ipsum, Dolor sit</strong></li>-->
 									<li><span class="icon"><img src="images/icon-clock.png"></span>Experiencia: <strong>1 año</strong></li>
 								</ul>
 							</div>
@@ -48,21 +50,7 @@
 								<h2>Hola, <br>Yo soy Griselda</h2>
 								<p>Estoy casada y tengo una hija. Vivo en la Ciudad Autónoma de Buenos Aires, Argentina. Siempre me gustó la nutrición y el mundo de la salud y alimentos, pero me decidí por estudiar la carrera de adulta, pasados los 30 años. Alentada por mi esposo me dispuse a buscar universidades. Hice la carrera en universidad Isalud. Al principio creía que ser nutricionista era estar en un consultorio y prescribir dietas, pero en la carrera descubrí que nuestra profesión se extiende mucho más allá de un escritorio. Los nutricionistas podemos realizar nuestra labor en fábricas de alimentos, restaurantes, escuelas, hospitales, clínicas, consultorios privados, a domicilio, etc. No sólo entregando un plan de alimentación sino hacer seguimiento y acompañar al paciente, conocerlo y alentarlo a conseguir sus objetivos nutricionales. Te invito a seguirme para recorrer juntos el camino al éxito nutricional y saludable adaptado a tus gustos y posibilidades.<br><br></p>
 								
-
-								<p>¿QUÉ TE OFREZCO?<br>
-								Consulta personalizada<br>
-								Se llevará a cabo una evaluación inicial para conocer tus objetivos y así ofrecerte las herramientas que necesitas.</p>
-
-								<p>Plan de Alimentación individualizado<br>
-								Prescripción calórica y preparación de plan diseñado exclusivamente pensando en tus necesidades, gustos y metas.</p>
-
-								<p>Menús variados<br>
-								Tips para mejorar la calidad de tus comidas. Diseño de menú que vaya de acuerdo a tus preferencias, intolerancias y estilo de vida.</p>
-
-								<p>Progreso<br>
-								Estaré atenta dando seguimiento a tus resultados, ofreciéndote nuevas recomendaciones y respondiendo tus preguntas.</p>
-
-								<p>PREGUNTAS FRECUENTES:<br>
+								<!--<p>PREGUNTAS FRECUENTES:<br>
 								Trabaja con vegetarianos/veganos?<br>
 								Claro que sí. Apoyo esta dieta y juntos podemos diseñar un plan de alimentación basado en una dieta vegetariana, equilibrada, variada y saludable.<br><br>
 								¿Cuánto tiempo toma ver resultados en la pérdida de peso?<br>
@@ -78,7 +66,7 @@
 								¿Cuánto tiempo dura el tratamiento?<br>
 								Todo depende de tu estado de salud al comienzo y las metas establecidas. El propósito detrás de todo plan es implementar cambios permanentes en tus hábitos alimentarios.<br><br>
 								Se puede mantener una vida social activa, salir a comer fuera y consumir bebidas alcohólicas durante el proceso?<br>
-								Sí, por supuesto se diseñará un plan con recomendaciones que se adapten a tu estilo de vida.</p>
+								Sí, por supuesto se diseñará un plan con recomendaciones que se adapten a tu estilo de vida.</p>-->
 							</div>
 						</div>
 					</div>

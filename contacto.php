@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<link rel="shortcut icon" type="image/x-icon" href="images/logo_pagina.ico" />
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
@@ -34,7 +35,6 @@
 					<div class="container">
 						
 						<h2 class="entry-title">Metodos para contactarme</h2>
-						<p class="espacio-contacto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci consequuntur officia mollitia. Quae aliquam, eveniet voluptatibus ipsa officia praesentium dicta animi tempora repudiandae culpa tempore dolorum nesciunt, fugit officiis ex.</p>
 						
 							<div class="contacto-detail">
 								<span class="location"><img src="images/icon-map-marker-alt.png"> Direccion</span>

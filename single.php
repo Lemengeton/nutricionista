@@ -10,11 +10,12 @@ include ("backend/conexion.php"); ?>
 	$resp_sql1 = mysqli_query($conexion,$sql1);
 	?>
 	<head>
+		<link rel="shortcut icon" type="image/x-icon" href="images/logo_pagina.ico" />
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
 		
-		<title>Diatecian | Recipe Single</title>
+		<title>Nutricionista | Receta Detallada</title>
 		<!-- Loading third party fonts -->
 		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|" rel="stylesheet" type="text/css">
 		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -51,14 +52,14 @@ include ("backend/conexion.php"); ?>
 								</div>
 								<div class="ingredient">
 									<h3>Ingredientes</h3>
-									<?php while ($row1 = mysqli_fetch_array($resp_sql1)){ ?>
 									<table>
+										<?php while ($row1 = mysqli_fetch_array($resp_sql1)){ ?>
 										<tr>
 											<td><strong><?php echo $row1['cantidad']; ?></strong></td> 
 											<td><?php echo $row1['ingrediente'] ?></td>
 										</tr>
+										<?php  }?>	
 									</table>
-									<?php  }?>	
 								</section>
 							</div>
 							<p>
