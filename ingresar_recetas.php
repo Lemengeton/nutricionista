@@ -35,15 +35,15 @@
 				<img src="./images/logo_rework.svg" class="icon-logo" width="150"/>
 				<h1 class="site-title">Subir Receta</h1>
 				<form method="POST" enctype="multipart/form-data" action="backend/subir_recetas.php">
-					<input type="text" name="receta" placeholder="Nombre receta" class="mb-2 input"> <br>
-					<input type="text" name="tiempo" placeholder="Tiempo" class="mb-2 input"> <br>
-					<input type="text" name="calorias" placeholder="Calorias" class="mb-2 input"> <br>
-					<textarea name="descripcion" placeholder="descripcion de receta" class="mb-2"></textarea><br>
-					<textarea name="cocinado" placeholder="metodo de cocinado" class="mb-2"></textarea><br>
-					<input class="imginput mb-2" accept="image/*" type="file" name="imagen"><br>
-					<input id="myInput" class="mb-2 input" type="number" placeholder="Cantidad de ingredientes"><br>
+					<input type="text" name="receta" placeholder="Nombre receta" class="mb-2 input" required> <br>
+					<input type="text" name="tiempo" placeholder="Tiempo" class="mb-2 input" required> <br>
+					<input type="text" name="calorias" placeholder="Calorias" class="mb-2 input" required> <br>
+					<textarea name="descripcion" placeholder="descripcion de receta" class="mb-2" required></textarea><br>
+					<textarea name="cocinado" placeholder="metodo de cocinado" class="mb-2" required></textarea><br>
+					<input class="imginput mb-2" accept="image/*" type="file" name="imagen" required><br>
+					<input id="myInput" class="mb-2 input" type="number" placeholder="Cantidad de ingredientes" required><br>
 					<div class="row" id="content"></div>
-					<button class="button mx-auto">Subir</button>
+					<button class="button mx-auto" id="formulario_subir">Subir</button>
 				</form>
 				<h1 class="site-title">Eliminar recetas</h1>
 				<form method="POST" enctype="multipart/form-data" action="backend/eleminar_recetas.php">
@@ -52,14 +52,14 @@
 					$sql ="SELECT `id`, `nombre` FROM `recetas` WHERE 1";
 					$resp_sql = mysqli_query($conexion,$sql);
 					?>
-					<select name="receta" class="mb-2 input">>
-						<option>seleccionar receta</option>
+					<select name="receta" class="mb-2 input" required>>
+						<option selected disabled>seleccionar receta</option>
 						<?php while ($row = mysqli_fetch_array($resp_sql)) {
 						 ?>
 						<option value="<?php echo $row['id'] ?>"><?php echo $row['nombre']; ?></option>
 					<?php } ?>
 					</select><br><br>
-					<button class="btn btn-danger">Eliminar</button>
+					<button class="btn btn-danger" id="formulario_baja">Eliminar</button>
 				</form>
 			</div>
 		</div>
@@ -83,10 +83,9 @@ $('#content').html('');
   for (var i = 0; i < cantidad; i++) {
   $('#content').append('<div class="homepage">');  
         $('#content').append('<label> ingrediente ' + (i+1) + '</label>');
-        $('#content').append('<input class="mb-2 input container recipe-section" type="text" name="cantidad[]" placeholder="cantidad"/> ');
-        $('#content').append('<input class="mb-2 input container recipe-section" type="text" name="ingrediente[]" placeholder="ingrediente"/> ');
+        $('#content').append('<input class="mb-2 input container recipe-section" type="text" name="cantidad[]" placeholder="cantidad" required/> ');
+        $('#content').append('<input class="mb-2 input container recipe-section" type="text" name="ingrediente[]" placeholder="ingrediente" required/> ');
         $('#content').append('</div>');
   }
-
 }
 	</script>
