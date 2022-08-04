@@ -58,7 +58,7 @@ include ('backend/conexion.php');
 									</div>
 								</div>
 							</article>
-							<input type="hidden" name="id" value="<?php echo $row['id']; ?>">
+							<input type="hidden" name="receta" value="<?php echo $row['id']; ?>">
 							</form>
 								<?php
 							} ?>
