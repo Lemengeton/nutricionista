@@ -46,6 +46,7 @@
 					$resp_sql = mysqli_query($conexion,$sql);
 					?>
 					<select name="receta">
+						<option>seleccionar receta</option>
 						<?php while ($row = mysqli_fetch_array($resp_sql)) {
 						 ?>
 						<option value="<?php echo $row['id'] ?>"><?php echo $row['nombre']; ?></option>
