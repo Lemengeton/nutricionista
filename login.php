@@ -24,7 +24,7 @@
 			<img src="./images/logo_rework.svg" class="icon-logo" width="150"/>
             <h1 class="site-title">Login</h1>
             <form method="post" action="backend/login_user.php" class="">
-            	<input type="text" name="DNI_Usuario" class="mb-2" placeholder="DNI"><br>
+            	<input type="text" name="DNI_Usuario" class="mb-2" placeholder="Usuario"><br>
             	<input type="password" name="Password" class="mb-2" placeholder="Contraseña"><br>
             	<button class="button mx-auto">Enviar</button>
             </form>
